@@ -1,0 +1,16 @@
+#! /bin/perl
+
+@family = ("mr.a","mr.b","mr.c","mr.d");
+
+%shoes_color = ("mr.a"=>black, "mr.b"=>white,"mr.c"=>red,"mr.d"=>green);
+%shoes_size = ("mr.a"=>20, "mr.b"=>25,"mr.c"=>40,"mr.d"=>35);
+
+foreach $i(@family){
+	if(%shoes_size{$i} > 10){
+		print "$i wears large $shoes_color {$i} shoe size $shoes_size{$i}\n"
+	else{
+		print "$i wears $shoes_color{$i} shoes size $shoes_size{$i}"
+}
+
+}
+
